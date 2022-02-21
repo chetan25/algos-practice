@@ -1,0 +1,39 @@
+//Singleton
+class Singleton {
+  constructor(){
+   ...
+  }
+
+  method1(){
+    ...
+  }
+
+  method2(){
+    ...
+  }
+}
+
+//const prevents from reassigning the exported default
+const singletonInstance = new Singleton();
+//object freeze prevents from changing the object properties/methods
+Object.freeze(singletonInstance);
+
+//export default singletonInstance;
+
+//static method vs class methods
+class test {
+  fire() {
+    console.log('test');
+  }
+}
+
+const t = new test();
+t.fire();//test
+t.fire = () => {
+   console.log('new');
+}
+t.fire();//new
+const a = new test();
+a.fire();//test
+
+Some time ago, a popular approach would be to enclose a piece of code in an Immediately Invoked Function Expression (IIFE). This is because all JavaScript files share the same scope.
