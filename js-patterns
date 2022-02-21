@@ -36,4 +36,4 @@ t.fire();//new
 const a = new test();
 a.fire();//test
 
-Some time ago, a popular approach would be to enclose a piece of code in an Immediately Invoked Function Expression (IIFE). This is because all JavaScript files share the same scope.
+// Some time ago, a popular approach would be to enclose a piece of code in an Immediately Invoked Function Expression (IIFE). This is because all JavaScript files share the same scope.
